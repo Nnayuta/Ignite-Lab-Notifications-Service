@@ -3,13 +3,17 @@ Prisma
 Jest
 
 Post: '/notifications': 
+```json
 {
 	"recipientId": "{% uuid 'v4' %}",
 	"content": "Nova Notificação de teste",
 	"category": "social"
 }
+```
 
-Return {
+Return 
+```json
+{
 	"notification": {
 		"_id": "cd9f0791-fba8-4dba-9b85-98c2f42108f8",
 		"props": {
@@ -22,3 +26,4 @@ Return {
 		}
 	}
 }
+```
